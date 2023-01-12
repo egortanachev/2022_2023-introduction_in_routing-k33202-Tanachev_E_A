@@ -1,4 +1,4 @@
-name: netlab2
+name: lab2
 
 
 mgmt:
@@ -18,12 +18,10 @@ topology:
       image: vrnetlab/vr-routeros:6_47_9
       mgmt_ipv4: 172.20.20.3
     
-
     R01.FRT:
       kind: vr-ros
       image: vrnetlab/vr-routeros:6_47_9
       mgmt_ipv4: 172.20.20.4
-
 
     PC1:
       kind: vr-ros
@@ -39,8 +37,6 @@ topology:
       kind: vr-ros
       image: vrnetlab/vr-routeros:6_47_9
       mgmt_ipv4: 172.20.20.7
-
-
 
 
   links: 
