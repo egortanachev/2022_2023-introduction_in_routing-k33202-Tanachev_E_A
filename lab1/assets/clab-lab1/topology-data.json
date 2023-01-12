@@ -1,0 +1,253 @@
+{
+    "name": "lab1",
+    "type": "clab",
+    "clab": {
+      "config": {
+        "prefix": "clab",
+        "mgmt": {
+          "network": "statics",
+          "bridge": "br-f002fd9b7d9f",
+          "ipv4-subnet": "172.20.20.0/24",
+          "ipv4-gw": "172.20.20.1",
+          "mtu": "1500",
+          "external-access": true
+        }
+      }
+    },
+    "nodes": {
+      "PC1": {
+        "index": "0",
+        "shortname": "PC1",
+        "longname": "clab-lab1-PC1",
+        "fqdn": "PC1.lab1.io",
+        "group": "",
+        "labdir": "/home/egortanachev/clab-lab1/PC1",
+        "kind": "linux",
+        "image": "ubuntu:latest",
+        "mgmt-net": "",
+        "mgmt-intf": "",
+        "mgmt-ipv4-address": "172.20.20.6",
+        "mgmt-ipv4-prefix-length": 24,
+        "mgmt-ipv6-address": "",
+        "mgmt-ipv6-prefix-length": 0,
+        "mac-address": "",
+        "labels": {
+          "clab-mgmt-net-bridge": "br-f002fd9b7d9f",
+          "clab-node-group": "",
+          "clab-node-kind": "linux",
+          "clab-node-lab-dir": "/home/egortanachev/clab-lab1/PC1",
+          "clab-node-name": "PC1",
+          "clab-node-type": "",
+          "clab-topo-file": "/home/egortanachev/lab1.yaml",
+          "containerlab": "lab1"
+        }
+      },
+      "PC2": {
+        "index": "1",
+        "shortname": "PC2",
+        "longname": "clab-lab1-PC2",
+        "fqdn": "PC2.lab1.io",
+        "group": "",
+        "labdir": "/home/egortanachev/clab-lab1/PC2",
+        "kind": "linux",
+        "image": "ubuntu:latest",
+        "mgmt-net": "",
+        "mgmt-intf": "",
+        "mgmt-ipv4-address": "172.20.20.7",
+        "mgmt-ipv4-prefix-length": 24,
+        "mgmt-ipv6-address": "",
+        "mgmt-ipv6-prefix-length": 0,
+        "mac-address": "",
+        "labels": {
+          "clab-mgmt-net-bridge": "br-f002fd9b7d9f",
+          "clab-node-group": "",
+          "clab-node-kind": "linux",
+          "clab-node-lab-dir": "/home/egortanachev/clab-lab1/PC2",
+          "clab-node-name": "PC2",
+          "clab-node-type": "",
+          "clab-topo-file": "/home/egortanachev/lab1.yaml",
+          "containerlab": "lab1"
+        }
+      },
+      "R01.TEST": {
+        "index": "2",
+        "shortname": "R01.TEST",
+        "longname": "clab-lab1-R01.TEST",
+        "fqdn": "R01.TEST.lab1.io",
+        "group": "",
+        "labdir": "/home/egortanachev/clab-lab1/R01.TEST",
+        "kind": "vr-ros",
+        "image": "vrnetlab/vr-routeros:6_47_9",
+        "mgmt-net": "",
+        "mgmt-intf": "",
+        "mgmt-ipv4-address": "172.20.20.2",
+        "mgmt-ipv4-prefix-length": 24,
+        "mgmt-ipv6-address": "",
+        "mgmt-ipv6-prefix-length": 0,
+        "mac-address": "",
+        "labels": {
+          "clab-mgmt-net-bridge": "br-f002fd9b7d9f",
+          "clab-node-group": "",
+          "clab-node-kind": "vr-ros",
+          "clab-node-lab-dir": "/home/egortanachev/clab-lab1/R01.TEST",
+          "clab-node-name": "R01.TEST",
+          "clab-node-type": "",
+          "clab-topo-file": "/home/egortanachev/lab1.yaml",
+          "containerlab": "lab1"
+        }
+      },
+      "SW01.L3.01.TEST": {
+        "index": "3",
+        "shortname": "SW01.L3.01.TEST",
+        "longname": "clab-lab1-SW01.L3.01.TEST",
+        "fqdn": "SW01.L3.01.TEST.lab1.io",
+        "group": "",
+        "labdir": "/home/egortanachev/clab-lab1/SW01.L3.01.TEST",
+        "kind": "vr-ros",
+        "image": "vrnetlab/vr-routeros:6_47_9",
+        "mgmt-net": "",
+        "mgmt-intf": "",
+        "mgmt-ipv4-address": "172.20.20.3",
+        "mgmt-ipv4-prefix-length": 24,
+        "mgmt-ipv6-address": "",
+        "mgmt-ipv6-prefix-length": 0,
+        "mac-address": "",
+        "labels": {
+          "clab-mgmt-net-bridge": "br-f002fd9b7d9f",
+          "clab-node-group": "",
+          "clab-node-kind": "vr-ros",
+          "clab-node-lab-dir": "/home/egortanachev/clab-lab1/SW01.L3.01.TEST",
+          "clab-node-name": "SW01.L3.01.TEST",
+          "clab-node-type": "",
+          "clab-topo-file": "/home/egortanachev/lab1.yaml",
+          "containerlab": "lab1"
+        }
+      },
+      "SW02.L3.01.TEST": {
+        "index": "4",
+        "shortname": "SW02.L3.01.TEST",
+        "longname": "clab-lab1-SW02.L3.01.TEST",
+        "fqdn": "SW02.L3.01.TEST.lab1.io",
+        "group": "",
+        "labdir": "/home/egortanachev/clab-lab1/SW02.L3.01.TEST",
+        "kind": "vr-ros",
+        "image": "vrnetlab/vr-routeros:6_47_9",
+        "mgmt-net": "",
+        "mgmt-intf": "",
+        "mgmt-ipv4-address": "172.20.20.4",
+        "mgmt-ipv4-prefix-length": 24,
+        "mgmt-ipv6-address": "",
+        "mgmt-ipv6-prefix-length": 0,
+        "mac-address": "",
+        "labels": {
+          "clab-mgmt-net-bridge": "br-f002fd9b7d9f",
+          "clab-node-group": "",
+          "clab-node-kind": "vr-ros",
+          "clab-node-lab-dir": "/home/egortanachev/clab-lab1/SW02.L3.01.TEST",
+          "clab-node-name": "SW02.L3.01.TEST",
+          "clab-node-type": "",
+          "clab-topo-file": "/home/egortanachev/lab1.yaml",
+          "containerlab": "lab1"
+        }
+      },
+      "SW02.L3.02.TEST": {
+        "index": "5",
+        "shortname": "SW02.L3.02.TEST",
+        "longname": "clab-lab1-SW02.L3.02.TEST",
+        "fqdn": "SW02.L3.02.TEST.lab1.io",
+        "group": "",
+        "labdir": "/home/egortanachev/clab-lab1/SW02.L3.02.TEST",
+        "kind": "vr-ros",
+        "image": "vrnetlab/vr-routeros:6_47_9",
+        "mgmt-net": "",
+        "mgmt-intf": "",
+        "mgmt-ipv4-address": "172.20.20.5",
+        "mgmt-ipv4-prefix-length": 24,
+        "mgmt-ipv6-address": "",
+        "mgmt-ipv6-prefix-length": 0,
+        "mac-address": "",
+        "labels": {
+          "clab-mgmt-net-bridge": "br-f002fd9b7d9f",
+          "clab-node-group": "",
+          "clab-node-kind": "vr-ros",
+          "clab-node-lab-dir": "/home/egortanachev/clab-lab1/SW02.L3.02.TEST",
+          "clab-node-name": "SW02.L3.02.TEST",
+          "clab-node-type": "",
+          "clab-topo-file": "/home/egortanachev/lab1.yaml",
+          "containerlab": "lab1"
+        }
+      }
+    },
+    "links": [
+      {
+        "a": {
+          "node": "R01.TEST",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:41:14:ed",
+          "peer": "z"
+        },
+        "z": {
+          "node": "SW01.L3.01.TEST",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:30:35:9f",
+          "peer": "a"
+        }
+      },
+      {
+        "a": {
+          "node": "SW01.L3.01.TEST",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:3b:0f:67",
+          "peer": "z"
+        },
+        "z": {
+          "node": "SW02.L3.01.TEST",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:54:ee:b3",
+          "peer": "a"
+        }
+      },
+      {
+        "a": {
+          "node": "SW01.L3.01.TEST",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:35:fb:be",
+          "peer": "z"
+        },
+        "z": {
+          "node": "SW02.L3.02.TEST",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:7e:71:b4",
+          "peer": "a"
+        }
+      },
+      {
+        "a": {
+          "node": "SW02.L3.01.TEST",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:24:93:a2",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PC1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:d5:4c:8b",
+          "peer": "a"
+        }
+      },
+      {
+        "a": {
+          "node": "SW02.L3.02.TEST",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:69:64:16",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PC2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:13:42:f2",
+          "peer": "a"
+        }
+      }
+    ]
+  }
