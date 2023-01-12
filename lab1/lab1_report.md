@@ -83,7 +83,12 @@ topology:
 
 ![Communication scheme](assets/communication_scheme.jpg)
 
-**3. Текст конфигураций сетевых устройств:**
+
+**3. Топология ContainerLab:**
+
+![ContainerLab scheme](assets/containerlab_scheme.jpg)
+
+**4. Текст конфигураций сетевых устройств:**
 
 **Роутер (R01.TEST)**
 
@@ -182,7 +187,7 @@ add disabled=no interface=bridge20
 set name=SW02.L3.02.TEST
 ```
 
-**4. Результаты пингов для проверки локальной связности**
+**5. Результаты пингов для проверки локальной связности**
 
 **Проверка Роутера**
 
