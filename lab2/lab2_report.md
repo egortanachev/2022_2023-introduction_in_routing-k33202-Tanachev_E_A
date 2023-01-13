@@ -79,7 +79,11 @@ topology:
 
 ![Communication scheme](assets/communication_scheme.jpg)
 
-**3. Текст конфигураций сетевых устройств:**
+**3. Топология ContainerLab:**
+
+![ContainerLab scheme](assets/containerlab_scheme.jpg)
+
+**4. Текст конфигураций сетевых устройств:**
 
 **Роутер (R01.MSK)**
 
@@ -204,9 +208,19 @@ add distance=1 dst-address=192.168.20.0/24 gateway=192.168.30.1
 set name=PC3 
 ```
 
-**4. Результаты пингов для проверки локальной связности**
+**5. Результаты пингов для проверки локальной связности**
 
+**Проверка PC1**
 
+![Check Router](assets/check1.jpg)
+
+**Проверка PC2**
+
+![Check Switch11](assets/check2.jpg)
+
+**Проверка PC3**
+
+![Check Switch21](assets/check3.jpg)
 
 ### Вывод
 
