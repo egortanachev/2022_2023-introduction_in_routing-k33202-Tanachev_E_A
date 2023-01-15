@@ -101,7 +101,9 @@ links:
 
 ![ContainerLab scheme](assets/containerlab_scheme.jpg)
 
-**4. Текст конфигураций сетевых устройств:**
+#### Часть №1. Настройка L3VPN.
+
+**4. Экспорты настроек устройств сети**
 
 **Роутер (R01.NY)**
 
@@ -310,22 +312,57 @@ add area=backbone
 set name=R01.SVL
 ```
 
-**5. Проверка локальной связности**
+**5. Результаты проверки VRF связанности**
 
-**Таблицы MPLS маршрутов на роутерах**
+![Check VRF](assets/check1.jpg)
+![Check VRF](assets/check2.jpg)
+![Check VRF](assets/check3.jpg)
 
-![Check MPLS](assets/check1.jpg)
-![Check MPLS](assets/check2.jpg)
-![Check MPLS](assets/check3.jpg)
-![Check MPLS](assets/check4.jpg)
-![Check MPLS](assets/check5.jpg)
-![Check MPLS](assets/check6.jpg)
+#### Часть №2. Настройка VPLS.
 
-**Пинг компьютера и сервера**
+**6. Экспорты настроек устройств сети**
 
-![Check PC1 and SGI_Prism](assets/check7.jpg)
-![Check PC1 and SGI_Prism](assets/check8.jpg)
+**Роутер (R01.NY)**
 
+```
+Текст
+```
+
+**Роутер (R01.SPB)**
+
+```
+Текст
+```
+
+**Роутер (R01.SVL)**
+
+```
+Текст
+```
+
+**Роутер (PC1)**
+
+```
+Текст
+```
+
+**Роутер (PC2)**
+
+```
+Текст
+```
+
+**Роутер (PC3)**
+
+```
+Текст
+```
+
+**7. Результаты проверки связанности между компьютерами**
+
+![Check PC](assets/check1.jpg)
+![Check PC](assets/check2.jpg)
+![Check PC](assets/check3.jpg)
 
 ### Вывод
 
