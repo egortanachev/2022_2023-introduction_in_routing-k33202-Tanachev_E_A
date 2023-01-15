@@ -325,37 +325,157 @@ set name=R01.SVL
 **Роутер (R01.NY)**
 
 ```
-Текст
+/interface bridge
+add name=Lo0
+add name=VPLS
+/interface vpls
+add disabled=no name=vpls3 remote-peer=10.10.10.1 vpls-id=10:0
+add disabled=no name=vpls1 remote-peer=10.10.10.2 vpls-id=10:0
+/interface wireless security-profiles
+set [ find default=yes ] supplicant-identity=MikroTik
+/routing bgp instance
+set default router-id=10.10.10.3
+/routing ospf instance
+set [ find default=yes ] router-id=10.10.10.3
+/interface bridge port
+add bridge=VPLS interface=ether2
+add bridge=VPLS interface=vpls1
+add bridge=VPLS interface=vpls3
+/ip address
+add address=172.31.255.30/30 interface=ether1 network=172.31.255.28
+add address=10.10.10.3 interface=Lo0 network=10.10.10.3
+add address=192.168.20.10/24 interface=ether2 network=192.168.20.0
+add address=10.10.3.1/30 interface=ether4 network=10.10.3.0
+/ip dhcp-client
+add disabled=no interface=ether1
+/mpls ldp
+set enabled=yes
+/mpls ldp interface
+add interface=ether4
+/routing bgp peer
+add address-families=ip,l2vpn,l2vpn-cisco,vpnv4 name=peer1 remote-address=10.10.10.6 remote-as=65530 update-source=Lo0
+/routing ospf network
+add area=backbone
+/system identity
+set name=R01.NY
 ```
 
 **Роутер (R01.SPB)**
 
 ```
-Текст
+/interface bridge
+add name=Lo0
+add name=VPLS
+/interface vpls
+add disabled=no name=vpls2 remote-peer=10.10.10.3 vpls-id=10:0
+add disabled=no name=vpls1 remote-peer=10.10.10.2 vpls-id=10:0
+/interface wireless security-profiles
+set [ find default=yes ] supplicant-identity=MikroTik
+/routing bgp instance
+set default router-id=10.10.10.1
+/routing ospf instance
+set [ find default=yes ] router-id=10.10.10.1
+/interface bridge port
+add bridge=VPLS interface=ether2
+add bridge=VPLS interface=vpls1
+add bridge=VPLS interface=vpls2
+/ip address
+add address=172.31.255.30/30 interface=ether1 network=172.31.255.28
+add address=10.10.10.1 interface=Lo0 network=10.10.10.1
+add address=10.10.1.1/30 interface=ether4 network=10.10.1.0
+add address=192.168.10.10/24 interface=ether2 network=192.168.10.0
+/ip dhcp-client
+add disabled=no interface=ether1
+/mpls ldp
+set enabled=yes
+/mpls ldp interface
+add interface=ether4
+/routing bgp peer
+add address-families=ip,l2vpn,l2vpn-cisco,vpnv4 name=peer1 remote-address=10.10.10.4 remote-as=65530 update-source=Lo0
+/routing ospf network
+add area=backbone
+/system identity
+set name=R01.SPB
 ```
 
 **Роутер (R01.SVL)**
 
 ```
-Текст
+/interface bridge
+add name=Lo0
+add name=VPLS
+/interface vpls
+add disabled=no name=vpls2 remote-peer=10.10.10.3 vpls-id=10:0
+add disabled=no name=vpls3 remote-peer=10.10.10.1 vpls-id=10:0
+/interface wireless security-profiles
+set [ find default=yes ] supplicant-identity=MikroTik
+/routing bgp instance
+set default router-id=10.10.10.2
+/routing ospf instance
+set [ find default=yes ] router-id=10.10.10.2
+/interface bridge port
+add bridge=VPLS interface=ether2
+add bridge=VPLS interface=vpls2
+add bridge=VPLS interface=vpls3
+/ip address
+add address=172.31.255.30/30 interface=ether1 network=172.31.255.28
+add address=10.10.10.2 interface=Lo0 network=10.10.10.2
+add address=10.10.2.1/30 interface=ether4 network=10.10.2.0
+add address=192.168.30.10/24 interface=ether2 network=192.168.30.0
+/ip dhcp-client
+add disabled=no interface=ether1
+/mpls ldp
+set enabled=yes
+/mpls ldp interface
+add interface=ether4
+/routing bgp peer
+add address-families=ip,l2vpn,l2vpn-cisco,vpnv4 name=peer1 remote-address=10.10.10.5 remote-as=65530 update-source=Lo0
+/routing ospf network
+add area=backbone
+/system identity
+set name=R01.SVL
 ```
 
-**Роутер (PC1)**
+**PC1**
 
 ```
-Текст
+/interface wireless security-profiles
+set [ find default=yes ] supplicant-identity=MikroTik
+/ip address
+add address=172.31.255.30/30 interface=ether1 network=172.31.255.28
+add address=192.168.0.1/24 interface=ether2 network=192.168.0.0
+/ip dhcp-client
+add disabled=no interface=ether1
+/system identity
+set name=PC1
 ```
 
-**Роутер (PC2)**
+**PC2**
 
 ```
-Текст
+/interface wireless security-profiles
+set [ find default=yes ] supplicant-identity=MikroTik
+/ip address
+add address=172.31.255.30/30 interface=ether1 network=172.31.255.28
+add address=192.168.0.2/24 interface=ether2 network=192.168.0.0
+/ip dhcp-client
+add disabled=no interface=ether1
+/system identity
+set name=PC2
 ```
 
-**Роутер (PC3)**
+**PC3**
 
 ```
-Текст
+/interface wireless security-profiles
+set [ find default=yes ] supplicant-identity=MikroTik
+/ip address
+add address=172.31.255.30/30 interface=ether1 network=172.31.255.28
+add address=192.168.0.3/24 interface=ether2 network=192.168.0.0
+/ip dhcp-client
+add disabled=no interface=ether1
+/system identity
+set name=PC3
 ```
 
 **7. Результаты проверки связанности между компьютерами**
