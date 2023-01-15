@@ -315,8 +315,6 @@ set name=R01.SVL
 **5. Результаты проверки VRF связанности**
 
 ![Check VRF](assets/check1.jpg)
-![Check VRF](assets/check2.jpg)
-![Check VRF](assets/check3.jpg)
 
 ### Часть №2. Настройка VPLS.
 
@@ -480,9 +478,7 @@ set name=PC3
 
 **7. Результаты проверки связанности между компьютерами**
 
-![Check PC](assets/check1.jpg)
 ![Check PC](assets/check2.jpg)
-![Check PC](assets/check3.jpg)
 
 ### Вывод
 
