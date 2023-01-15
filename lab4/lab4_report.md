@@ -101,7 +101,7 @@ links:
 
 ![ContainerLab scheme](assets/containerlab_scheme.jpg)
 
-#### Часть №1. Настройка L3VPN.
+### Часть №1. Настройка L3VPN.
 
 **4. Экспорты настроек устройств сети**
 
@@ -318,7 +318,7 @@ set name=R01.SVL
 ![Check VRF](assets/check2.jpg)
 ![Check VRF](assets/check3.jpg)
 
-#### Часть №2. Настройка VPLS.
+### Часть №2. Настройка VPLS.
 
 **6. Экспорты настроек устройств сети**
 
