@@ -323,10 +323,16 @@ set name=SGI_Prism
 **Таблицы MPLS маршрутов на роутерах**
 
 ![Check MPLS](assets/check1.jpg)
+![Check MPLS](assets/check2.jpg)
+![Check MPLS](assets/check3.jpg)
+![Check MPLS](assets/check4.jpg)
+![Check MPLS](assets/check5.jpg)
+![Check MPLS](assets/check6.jpg)
 
 **Пинг компьютера и сервера**
 
-![Check PC1 and SGI_Prism](assets/check2.jpg)
+![Check PC1 and SGI_Prism](assets/check7.jpg)
+![Check PC1 and SGI_Prism](assets/check8.jpg)
 
 
 ### Вывод
